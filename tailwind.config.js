@@ -3,8 +3,13 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  backgroundImage: {
+    'backgrounddark': "url('/src/images/backgrounddark.svg')",
+  },
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ['Manrope', 'sans-serif'],
+    },
   },
   plugins: [],
 }
