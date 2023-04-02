@@ -11,6 +11,8 @@ import Navbar from "./Navbar";
 const Hompage1 = () => {
   return (
     <div className="relative px-20 bg-[url('/src/images/backgrounddark.svg')] bg-no-repeat bg-slate-800 bg-right-top">
+      
+      
       <Navbar />
       <div className="flex justify-between gap-20 items-center">
         <div>
