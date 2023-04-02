@@ -63,7 +63,7 @@ const Homepage2 = () => {
         </div>
       </div>
 
-      <div className="flex justify-between items-center pt-20">
+      <div className="flex justify-between items-center pt-20 xl:gap-80">
         <div>
           <img src={messi} alt="" />
         </div>
@@ -90,7 +90,7 @@ const Homepage2 = () => {
         </div>
       </div>
 
-      <div className="flex justify-between items-center mt-20">
+      <div className="flex justify-between items-center mt-20 xl:gap-40">
         <div>
         <h1 className="font-sans not-italic font-normal text-3xl w-96 leading-10 pb-4 text-black">
             We connect our customers with the best, and help them keep up-and

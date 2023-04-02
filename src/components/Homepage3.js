@@ -77,7 +77,7 @@ const Homepage3 = () => {
         <div className="flex justify-between pt-20 pb-5">
           <div>
             <img src={category1} alt="" />
-            <h3 className="font-sans not-italic font-bold text-lg text-black py-3">
+            <h3 className="font-sans not-italic font-bold text-lg text-black pt-5 pb-4">
               Category{" "}
               <span className="font-light text-slate-700">
                 November 22, 2021
@@ -93,7 +93,7 @@ const Homepage3 = () => {
           </div>
           <div>
             <img src={category2} alt="" />
-            <h3 className="font-sans not-italic font-bold text-lg text-black py-3">
+            <h3 className="font-sans not-italic font-bold text-lg text-black pt-5 pb-4">
               Category{" "}
               <span className="font-light text-slate-700">
                 November 22, 2021
@@ -110,7 +110,7 @@ const Homepage3 = () => {
           </div>
           <div>
             <img src={category3} alt="" />
-            <h3 className="font-sans not-italic font-bold text-lg text-black py-3">
+            <h3 className="font-sans not-italic font-bold text-lg text-black pt-5 pb-4">
               Category{" "}
               <span className="font-light text-slate-700">
                 November 22, 2021
