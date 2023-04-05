@@ -12,16 +12,16 @@ import fineLady from "../images/finelady.svg";
 
 const Homepage2 = () => {
   return (
-    <div className="pt-16 px-40">
+    <div className="pt-16 px-7 lg:px-20 sm:px-12">
       <div className="text-center">
-        <h6 className="font-sans not-italic font-normal text-lg text-slate-500">
+        <h6 className="font-sans not-italic font-normal text-sm text-slate-500 pb-5 sm:text-lg">
           Our Services
         </h6>
-        <h1 className="font-Manrope not-italic font-light text-5xl leading-tight w-2/3 m-auto">
+        <h1 className="font-Manrope not-italic font-light text-4xl leading-tight w-2/3 m-auto sm:text-5xl sm:w-auto">
           Handshake infographic mass market crowdfunding iteration.
         </h1>
       </div>
-      <div className="flex justify-between py-16">
+      <div className="grid grid-cols-1 justify-items-center py-16 md:grid-cols-2 lg:grid-cols-3">
         <div>
           <img src={cool} alt="" />
           <h2 className="text-black pt-5 pb-1 text-2xl font-extralight">Cool feature title</h2>
@@ -63,12 +63,13 @@ const Homepage2 = () => {
         </div>
       </div>
 
-      <div className="flex justify-between items-center pt-20 xl:gap-80">
-        <div>
+      <div className="flex flex-col items-center pt-28 xl:px-16 lg:flex-row lg:items-center lg:gap-20 xl:gap-40 lg:justify-center lg:space-between">
+        <div className="lg:w-2/4">
           <img src={messi} alt="" />
         </div>
-        <div>
-          <h1 className="font-sans not-italic font-normal text-3xl w-96 leading-10 pb-8 text-black">
+        <div className="lg:w-9/12 xl:w-6/12 lg:w-2/4">
+         
+          <h1 className="font-sans not-italic font-light text-3xl xl:leading-snug py-7 text-black lg:text-4xl xl:w-11/12">
             We connect our customers with the best, and help them keep up-and
             stay open.
           </h1>
@@ -84,15 +85,20 @@ const Homepage2 = () => {
             <img src={score} alt="" />
             <h6>Business-to-consumer long tail.</h6>
           </div>
-          <button className="bg-slate-900 w-40 h-10 rounded-full text-white mt-7">
+          <div class="flex justify-center lg:justify-start">
+          <button className="bg-slate-900 w-2/4 h-16 rounded-full text-white mt-7 text-2xl">
             Start now
           </button>
+          </div>
         </div>
       </div>
 
-      <div className="flex justify-between items-center mt-20 xl:gap-40">
-        <div>
-        <h1 className="font-sans not-italic font-normal text-3xl w-96 leading-10 pb-4 text-black">
+      <div className="flex flex-col items-center pt-28 xl:px-16 lg:flex-row-reverse lg:items-center lg:gap-20 xl:gap-40 lg:justify-center lg:space-between">
+      <div className="lg:w-2/4">
+            <img src={fineLady} alt="" />
+        </div>
+        <div className="lg:w-2/4 lg:w-8/12 xl:w-6/12">
+        <h1 className="font-sans not-italic font-light text-3xl xl:leading-snug py-7 text-black lg:text-4xl xl:w-11/12">
             We connect our customers with the best, and help them keep up-and
             stay open.
           </h1>
@@ -109,9 +115,7 @@ const Homepage2 = () => {
             <h6 className="text-black text-sm">Business-to-consumer long tail.</h6>
           </div>
         </div>
-        <div>
-            <img src={fineLady} alt="" />
-        </div>
+       
       </div>
     </div>
   );

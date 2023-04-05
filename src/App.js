@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Hompage1 from './components/Hompage1';
 import Navbar from './components/Navbar';
@@ -14,7 +13,7 @@ function App() {
     <Homepage2 />
     <Homepage3 />
     {/* <Blog /> */}
-    <Footer />
+    {/* <Footer /> */}
     </div>
   );
 }
