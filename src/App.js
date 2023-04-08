@@ -1,19 +1,21 @@
-import './App.css';
-import Hompage1 from './components/Hompage1';
-import Navbar from './components/Navbar';
-import Homepage2 from './components/Homepage2';
-import Homepage3 from './components/Homepage3';
-import Footer from './components/Footer';
-import Blog from './components/Blog';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
+import Blog from "./components/Blog";
+import About from "./components/About";
+import Homepage from "./components/Homepage";
 
 function App() {
   return (
     <div className="App">
-    <Hompage1/ >
-    <Homepage2 />
-    <Homepage3 />
-    {/* <Blog /> */}
-    {/* <Footer /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

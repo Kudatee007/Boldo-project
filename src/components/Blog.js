@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar2 from "./Navbar2";
 import blogSquare from "../images/blogRectangle 1270.svg";
 import chandler from "../images/chandler.svg";
 import category1 from "../images/category1.svg";
@@ -8,24 +8,24 @@ import category3 from "../images/category3.svg";
 
 const Blog = () => {
   return (
-    <div className="px-20">
-      <Navbar />
+    <div className="xl:px-20 px-10 lg:px-16">
+      <Navbar2 />
       <div className="text-center pt-10 pb-16">
         <h3 className="font-sans not-italic font-normal text-lg text-slate-500">
           Blog
         </h3>
-        <h1 className="font-Manrope not-italic font-light text-7xl leading-tight m-auto">
+        <h1 className="font-Manrope not-italic font-light text-5xl md:text-7xl leading-tight m-auto">
           Thoughts and words
         </h1>
       </div>
-      <div className="flex justify-between items-center gap-32">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-12 md:gap-20 lg:gap-10">
         <img src={blogSquare} alt="" />
         <div>
           <h3 className="font-sans not-italic font-bold text-lg text-black py-3">
             Category{" "}
             <span className="font-light text-slate-700">November 22, 2021</span>
           </h3>
-          <p className=" text-5xl font-light text-black leading-snug">
+          <p className="text-4xl md:text-5xl font-light text-black leading-snug md:leading-normal">
             Pitch termsheet backing validation focus release.
           </p>
           <div className="flex items-center gap-4 py-8">
@@ -35,11 +35,11 @@ const Blog = () => {
         </div>
       </div>
       <hr className="mt-20 mb-20" />
-      <div className="px-28">
+      <div className="xl:px-28 md:px-10 lg:px-12">
         <h1 className="font-Manrope not-italic font-light text-5xl leading-tight m-auto pb-12">
           Latest news
         </h1>
-        <div className="grid gap-3 grid-cols-3">
+        <div className="grid gap-3 grid-cols-1 justify-items-center sm:grid-cols-2 sm:gap-10 lg:grid-cols-3">
           <div>
             <img src={category1} alt="" />
             <h3 className="font-sans not-italic font-bold text-lg text-black pt-5 pb-4">

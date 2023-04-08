@@ -3,6 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   backgroundImage: {
     backgrounddark: "url('/src/images/backgrounddark.svg')",
+    footeresclipse: "url('/src/images/footeresclipse.svg')"
   },
   theme: {
     fontFamily: {

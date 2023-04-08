@@ -10,8 +10,7 @@ import category1 from "../images/category1.svg";
 import category2 from "../images/category2.svg";
 import category3 from "../images/category3.svg";
 import chandler from "../images/chandler.svg";
-import rachel from "../images/rachel.svg";
-import monica from "../images/monica.svg";
+import { Link } from "react-router-dom";
 
 const Homepage3 = () => {
   return (
@@ -27,7 +26,7 @@ const Homepage3 = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center md:flex-row md:justify-between mt-10">
+        <div className="flex flex-col justify-center items-center md:flex-row md:justify-between mt-10">
           <div>
             <img src={test1} alt="" />
           </div>
@@ -77,8 +76,7 @@ const Homepage3 = () => {
             Value proposition accelerator product management venture
           </h1>
         </div>
-
-        <div className="flex flex-col justify-center items-center lg:flex-row md:justify-between md:gap-10 pt-20 pb-20 md:items-center xl:px-16">
+        <div className="grid grid-cols-1 justify-items-center py-16 gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 xl:gap-0">
           <div>
             <img src={category1} alt="" />
             <h3 className="font-sans not-italic font-bold text-lg text-black pt-5 pb-4">
@@ -90,7 +88,7 @@ const Homepage3 = () => {
             <p className="w-60 text-xl font-light text-black">
               Pitch termsheet backing validation focus release.
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 py-5">
               <img src={chandler} alt="" />
               <p className="text-lg font-light">Chandler Bing</p>
             </div>
@@ -104,10 +102,9 @@ const Homepage3 = () => {
               </span>
             </h3>
             <p className="w-60 text-xl font-light text-black">
-              Seed round direct mailing non-disclosure agreement graphical user
-              interface rockstar.
+              Seed round direct mailing non-disclosure agreement.
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 py-5">
               <img src={chandler} alt="" />
               <p className="text-lg font-light">Rachel Green</p>
             </div>
@@ -124,7 +121,7 @@ const Homepage3 = () => {
               Beta prototype sales ipad gen-z marketing network effects value
               proposition.
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 py-5">
               <img src={chandler} alt="" />
               <p className="text-lg font-light">Monica Gellar</p>
             </div>
@@ -132,9 +129,11 @@ const Homepage3 = () => {
         </div>
 
         <div className="text-center">
-          <button className="border border-slate-900 w-60 h-16 rounded-full border-2 font-sans not-italice font-bold text-lg text-slate-900">
-            Load more
-          </button>
+          <Link to="/blog">
+            <button className="border border-slate-900 w-60 h-16 rounded-full border-2 font-sans not-italice font-bold text-lg text-slate-900">
+              Load more
+            </button>
+          </Link>
         </div>
       </div>
     </div>

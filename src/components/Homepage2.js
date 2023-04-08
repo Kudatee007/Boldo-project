@@ -17,11 +17,11 @@ const Homepage2 = () => {
         <h6 className="font-sans not-italic font-normal text-sm text-slate-500 pb-5 sm:text-lg">
           Our Services
         </h6>
-        <h1 className="font-Manrope not-italic font-light text-4xl leading-tight w-2/3 m-auto sm:text-5xl sm:w-auto">
+        <h1 className="font-Manrope not-italic font-light text-4xl leading-tight w-2/3 m-auto sm:text-5xl sm:w-auto xl:w-3/4">
           Handshake infographic mass market crowdfunding iteration.
         </h1>
       </div>
-      <div className="grid grid-cols-1 justify-items-center py-16 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 justify-items-center py-16 gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 xl:gap-0">
         <div>
           <img src={cool} alt="" />
           <h2 className="text-black pt-5 pb-1 text-2xl font-extralight">Cool feature title</h2>
@@ -93,7 +93,7 @@ const Homepage2 = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center pt-28 xl:px-16 lg:flex-row-reverse lg:items-center lg:gap-20 xl:gap-40 lg:justify-center lg:space-between">
+      <div className="flex flex-col items-center py-28 xl:px-16 lg:flex-row-reverse lg:items-center lg:gap-20 xl:gap-40 lg:justify-center lg:space-between">
       <div className="lg:w-2/4">
             <img src={fineLady} alt="" />
         </div>

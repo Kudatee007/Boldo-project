@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import boldoLogo from "../images/Logo.svg";
 import ham from "../images/appnodesync.com by html.to.design ❤️ FREE version - 25/02/Group.svg";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -10,14 +11,17 @@ function Navbar() {
   }
 
   return (
-    <div>
+    <div className="other-page-navbar">
       <nav className="py-10 md:flex md:items-center md:justify-between relative">
         <div className="flex justify-between items-center">
-          <div>
-            <img src={boldoLogo} alt="" className="h-10" />
-          </div>
+          <Link to="/">
+            {" "}
+            <div>
+              <img src={boldoLogo} alt="" className="h-10" />
+            </div>
+          </Link>
           <div className="md:hidden block border p-2" onClick={toggleMenu}>
-            <img src={ham} alt="" />
+            <img src={ham} alt="" className="w-5"/>
           </div>
         </div>
 
@@ -37,12 +41,14 @@ function Navbar() {
               Services
             </h1>
           </li>
-          <li className="mx-4 my-6 md:my-0">
-            {" "}
-            <h1 className="text-white text-xl hover:text-slate-500 duration-500">
-              About
-            </h1>
-          </li>
+          <Link to="/about">
+            <li className="mx-4 my-6 md:my-0">
+              {" "}
+              <h1 className="text-white text-xl hover:text-slate-500 duration-500">
+                About
+              </h1>
+            </li>
+          </Link>
           <button className="bg-white w-32 h-11 rounded-3xl Open Sans font-semibold text-base md:mx-4 hover:text-white hover:bg-slate-400 duration-500">
             Log In
           </button>
