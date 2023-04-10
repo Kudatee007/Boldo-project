@@ -1,10 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import about333 from "../images/about333.svg";
 import dwight from "../images/dwight.svg";
 import pam from "../images/pam.svg";
 import Navbar2 from "./Navbar2";
 
 const About = () => {
+  const [count, setCount] = useState(0);
+  const [count2, setCount2] = useState(0);
+  const [count3, setCount3] = useState(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (count < 120) {
+        setCount(count + 1);
+      }
+    }, 1);
+
+    const timer2 = setTimeout(() => {
+      if (count2 < 10) {
+        setCount2(count2 + 1);
+      }
+    }, 1);
+
+    const timer3 = setTimeout(() => {
+      if (count3 < 240) {
+        setCount3(count3 + 1);
+      }
+    }, 1);
+
+    return () => {
+      clearTimeout(timer, timer2, timer3);
+    };
+  }, [count, count2, count3]);
+
+  const digit = `${count}m`;
+  const digit2 = `${count2}.000`;
+  const digit3 = count3;
+
   return (
     <div className="relative">
       <div className="relative bg-green-300 pb-16 sm:px-16  xl:px-24 sm:pb-24">
@@ -35,7 +67,7 @@ const About = () => {
         <div className="flex flex-col gap-10 justify-center items-center pt-16 sm:flex-row xl:gap-40">
           <div>
             <h1 className="text-6xl font-light md:text-7xl lg:text-8xl">
-              120m
+              {digit}
             </h1>
             <p className="text-md text-slate-700 font-light md:text-xl">
               Cool featute title
@@ -43,14 +75,16 @@ const About = () => {
           </div>
           <div>
             <h1 className="text-6xl font-light md:text-7xl lg:text-8xl">
-              10.000
+              {digit2}
             </h1>
             <p className="text-md text-slate-700 font-light md:text-xl">
               Cool featute title
             </p>
           </div>
           <div>
-            <h1 className="text-6xl font-light md:text-7xl lg:text-8xl">240</h1>
+            <h1 className="text-6xl font-light md:text-7xl lg:text-8xl">
+              {digit3}
+            </h1>
             <p className="text-md text-slate-700 font-light md:text-xl">
               Cool featute title
             </p>
