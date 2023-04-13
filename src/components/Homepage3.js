@@ -44,10 +44,10 @@ const Homepage3 = () => {
                 key={index}
                 src={slide}
                 alt={`Slide ${index + 1}`}
-                className={`opacity-50 ${
+                className={`${
                   index === currentSlide
                     ? "opacity-100 transition-opacity duration-500 ease-in-out"
-                    : ""
+                    : "opacity-50"
                 }`}
               />
             ))}

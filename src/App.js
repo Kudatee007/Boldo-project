@@ -5,7 +5,6 @@ import Blog from "./components/Blog";
 import About from "./components/About";
 import Homepage from "./components/Homepage";
 
-
 function App() {
   return (
     <div className="App">
