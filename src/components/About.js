@@ -39,7 +39,7 @@ const About = () => {
 
   return (
     <div className="relative">
-      <div className="relative bg-green-300 pb-16 sm:px-16  xl:px-24 sm:pb-24">
+      <div className="relative bg-green-300 pb-16 px-10 sm:px-16  xl:px-20 lg:px-16 sm:pb-24">
         <Navbar2 />
         <h6 className="font-sans not-italic font-light text-lg text-center text-black md:text-xl pb-3 lg:flex lg:justify-start sm:pt-10">
           About

@@ -23,12 +23,12 @@ const Hompage1 = () => {
             non-disclosure.
           </p>
           <div className="flex flex-col gap-5 sm:flex-row">
-            <button
+           <a href="#temPlate"> <button
               className="w-60 h-16 bg-green-400 rounded-full font-sans font-bold not-italic text-lg"
               style={{ border: "2px solid #69E6A6" }}
             >
               Buy template
-            </button>
+            </button></a>
             <button className="w-60 sm:w-40 text-white border border-white rounded-full h-16 font-sans font-bold not-italic text-lg border-2">
               Explore
             </button>

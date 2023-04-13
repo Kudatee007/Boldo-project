@@ -21,7 +21,7 @@ function Navbar() {
             </div>
           </Link>
           <div className="md:hidden block border p-2" onClick={toggleMenu}>
-            <img src={ham} alt="" className="w-5"/>
+            <img src={ham} alt="" className="w-5" />
           </div>
         </div>
 
@@ -37,9 +37,12 @@ function Navbar() {
             </h1>
           </li>
           <li className="mx-4 my-6 md:my-0">
-            <h1 className="text-white text-xl hover:text-slate-500 duration-500">
-              Services
-            </h1>
+            <a href="#services">
+              {" "}
+              <h1 className="text-white text-xl hover:text-slate-500 duration-500">
+                Services
+              </h1>
+            </a>
           </li>
           <Link to="/about">
             <li className="mx-4 my-6 md:my-0">

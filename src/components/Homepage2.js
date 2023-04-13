@@ -12,7 +12,7 @@ import fineLady from "../images/finelady.svg";
 
 const Homepage2 = () => {
   return (
-    <div className="pt-16 px-7 lg:px-20 sm:px-12">
+    <div className="pt-16 px-7 lg:px-20 sm:px-12" id="services">
       <div className="text-center">
         <h6 className="font-sans not-italic font-normal text-sm text-slate-500 pb-5 sm:text-lg">
           Our Services

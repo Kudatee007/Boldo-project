@@ -25,7 +25,7 @@ const Homepage3 = () => {
   };
   return (
     <div>
-      <div className="bg-slate-900 py-20 px-5 md:px-10 xl:px-40">
+      <div className="bg-slate-900 py-20 px-5 md:px-10 xl:px-40" id="temPlate">
         <div className="flex flex-col md:flex-row justify-between">
           <h1 className="font-sans not-italic font-normal text-5xl text-white md:w-3/5 leading-snug">
             An enterprise template to ramp up your company website
