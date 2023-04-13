@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import arrowLeft from "../images/arrowleft1.svg";
 import arrowRight from "../images/arrowright1.svg";
 import test1 from "../images/Testimonial1.svg";
@@ -13,6 +13,16 @@ import chandler from "../images/chandler.svg";
 import { Link } from "react-router-dom";
 
 const Homepage3 = () => {
+  const slides = [test1, test2, test3];
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const goToNextSlide = () => {
+    setCurrentSlide((currentSlide + 1) % slides.length);
+  };
+
+  const goToPreviousSlide = () => {
+    setCurrentSlide((currentSlide - 1 + slides.length) % slides.length);
+  };
   return (
     <div>
       <div className="bg-slate-900 py-20 px-5 md:px-10 xl:px-40">
@@ -21,20 +31,30 @@ const Homepage3 = () => {
             An enterprise template to ramp up your company website
           </h1>
           <div className="flex justify-between content-end gap-6 pt-20">
-            <img src={arrowLeft} alt="" />
-            <img src={arrowRight} alt="" />
+            <img src={arrowLeft} onClick={goToPreviousSlide} alt="" />
+            <img src={arrowRight} onClick={goToNextSlide} alt="" />
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center md:flex-row md:justify-between mt-10">
-          <div>
-            <img src={test1} alt="" />
+        <div className="carousel-container relative">
+          {/* show multiple images on desktop */}
+          <div className="hidden md:flex justify-center items-center md:flex-row md:justify-between mt-10">
+            {slides.map((slide, index) => (
+              <img
+                key={index}
+                src={slide}
+                alt={`Slide ${index + 1}`}
+                className={`opacity-50 ${
+                  index === currentSlide
+                    ? "opacity-100 transition-opacity duration-500 ease-in-out"
+                    : ""
+                }`}
+              />
+            ))}
           </div>
-          <div>
-            <img src={test2} alt="" />
-          </div>
-          <div>
-            <img src={test3} alt="" />
+          {/* show one image on mobile */}
+          <div className="mobile-image block md:hidden mt-10">
+            <img src={slides[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
           </div>
         </div>
       </div>
